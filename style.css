@@ -4,3 +4,15 @@ Author: Revival Church of Cadiz
 Description: A completely custom theme built from the ground up for our church.
 Version: 1.0
 */
+/* Global helpers */
+.card { border-radius: 14px; background: #fff; box-shadow: 0 8px 20px rgba(15,23,42,0.06); transition: transform .25s, box-shadow .25s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(15,23,42,0.12); }
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(16px); }
+.reveal.revealed { opacity: 1; transform: none; transition: opacity .6s ease, transform .6s ease; }
+
+/* Header color tokens (match your theme.json palette) */
+:root { --color-dark:#0b1220; --color-light:#f8fafc; }
+.has-dark-background-color { background-color: var(--color-dark) !important; }
+.has-light-color { color: var(--color-light) !important; }
