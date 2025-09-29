@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH="/home/cadizr5/repositories/cadiz-custom-theme"
+    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/rsync -av --delete --exclude=".git" --exclude=".cpanel.yml" ./ "$DEPLOYPATH"
