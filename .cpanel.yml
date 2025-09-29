@@ -1,6 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH="/home/cadizr5/repositories/cadiz-custom-theme"
+    - export DEPLOYPATH="/home/cadizr5/new.cadizrevival.com/wp-content/themes/cadiz-custom-theme/"
+    - echo "Deploying to $DEPLOYPATH"
     - /bin/mkdir -p "$DEPLOYPATH"
     - /bin/rsync -av --delete --exclude=".git" --exclude=".cpanel.yml" ./ "$DEPLOYPATH"
+    - /bin/ls -la "$DEPLOYPATH"
