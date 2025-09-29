@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        { "slug": "primary",   "name": "Primary",   "color": "#1f4b99" },
+        { "slug": "accent",    "name": "Accent",    "color": "#0ea5a4" },
+        { "slug": "dark",      "name": "Dark",      "color": "#0b1220" },
+        { "slug": "light",     "name": "Light",     "color": "#f8fafc" }
+      ],
+      "background": true,
+      "defaultPalette": false
+    },
+    "typography": {
+      "fontSizes": [
+        { "slug": "sm", "size": "14px", "name": "Small" },
+        { "slug": "base", "size": "16px", "name": "Base" },
+        { "slug": "lg", "size": "20px", "name": "Large" },
+        { "slug": "xl", "size": "28px", "name": "XL" },
+        { "slug": "display", "size": "40px", "name": "Display" }
+      ],
+      "lineHeight": true
+    },
+    "spacing": {
+      "units": [ "px", "rem", "em", "vh", "vw" ],
+      "blockGap": "1.2rem"
+    },
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1120px"
+    }
+  },
+  "styles": {
+    "color": { "background": "#f8fafc", "text": "#0b1220" },
+    "typography": { "fontSize": "16px" },
+    "elements": {
+      "heading": {
+        "typography": { "fontWeight": "700", "lineHeight": "1.2" },
+        "color": { "text": "#0b1220" }
+      },
+      "link": {
+        "color": { "text": "#1f4b99" }
+      }
+    }
+  },
+  "templates": {
+    "index": "Default index"
+  }
+}
